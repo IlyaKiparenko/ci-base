@@ -1,5 +1,5 @@
-#ifndef SOLUTIONS_HEAPSORT_HEAP_H_
-#define SOLUTIONS_HEAPSORT_HEAP_H_
+#ifndef SOLUTIONS_HEAP_H_
+#define SOLUTIONS_HEAP_H_
 
 #include <stdio.h>
 
@@ -26,4 +26,4 @@ class Heap {
   ~Heap();
 };
 
-#endif  // SOLUTIONS_HEAPSORT_HEAP_H_
+#endif  // SOLUTIONS_HEAP_H_
