@@ -19,10 +19,9 @@ int main() {
 
   printf("%4i ", y[0]);
   for (int i = 1; i < size; i++) {
-    if (y[i-1] >= y[i]) 
+    if (y[i-1] >= y[i])
       sum++;
-    else  
-      printf("_");
+    else     printf("_");
     printf("%4i ", y[i]);
   }
   printf("\n");

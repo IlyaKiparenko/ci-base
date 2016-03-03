@@ -71,9 +71,9 @@ void Heap::HeapSort(int* ar, int size, int d) {
   h.m = ar;
   for (int i = 0; i < size; i++) {
     h.vup(i);
-  } 
+  }
   for (int i = 0; i < size; i++) {
     h.min_pop();
-  } 
+  }
   h.m = new int[1];
 }

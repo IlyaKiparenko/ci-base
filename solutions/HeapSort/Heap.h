@@ -1,5 +1,5 @@
-#ifndef UTILS_HEAPSORT_HEAP_H_
-#define UTILS_HEAPSORT_HEAP_H_
+#ifndef SOLUTIONS_HEAPSORT_HEAP_H_
+#define SOLUTIONS_HEAPSORT_HEAP_H_
 
 #include <stdio.h>
 
@@ -10,7 +10,7 @@ class Heap {
   int max_size;
   int d;
   Heap();
-  Heap(int size, int d = 2);
+  explicit Heap(int size, int d = 2);
   void transp(int i, int j);
   void vdown(int i);
   void vup(int i);
@@ -26,4 +26,4 @@ class Heap {
   ~Heap();
 };
 
-#endif //UTILS_HEAPSORT_HEAP_H_
+#endif  // SOLUTIONS_HEAPSORT_HEAP_H_
