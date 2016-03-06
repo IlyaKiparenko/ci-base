@@ -1,7 +1,7 @@
 #ifndef SOLUTIONS_HEAP_H_
 #define SOLUTIONS_HEAP_H_
 
-#include <stdio.h>
+
 
 class Heap {
  public:
@@ -16,12 +16,7 @@ class Heap {
   void vup(int i);
   int min_pop();
   void push(int i);
-  void print() {
-    for (int i = 0; i < size; i++) {
-      printf("%4i ", m[i]);
-    }
-    printf("\n");
-  }
+  void print();
   static void HeapSort(int* ar, int n, int d);
   ~Heap();
 };

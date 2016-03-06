@@ -1,4 +1,6 @@
 #include "Heap.h"
+#include <stdio.h>
+#include <exception>
 
 Heap::Heap() {}
 
@@ -52,15 +54,24 @@ int Heap::min_pop() {
 }
 
 void Heap::push(int i) {
-  if (size - 1 < max_size) {
+  if (size < max_size) {
     m[size] = i;
     size++;
     vup(size - 1);
+  } else {
+    throw new std::exception();
   }
 }
 
 Heap::~Heap() {
   delete[] m;
+}
+
+void Heap::print() {
+  for (int i = 0; i < size; i++) {
+    printf("%4i ", m[i]);
+  }
+  printf("\n");
 }
 
 void Heap::HeapSort(int* ar, int size, int d) {
