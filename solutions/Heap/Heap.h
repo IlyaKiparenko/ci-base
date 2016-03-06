@@ -1,5 +1,5 @@
-#ifndef SOLUTIONS_HEAP_H_
-#define SOLUTIONS_HEAP_H_
+#ifndef SOLUTIONS_HEAP_HEAP_H_
+#define SOLUTIONS_HEAP_HEAP_H_
 
 
 
@@ -21,4 +21,4 @@ class Heap {
   ~Heap();
 };
 
-#endif  // SOLUTIONS_HEAP_H_
+#endif  // SOLUTIONS_HEAP_HEAP_H_
