@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8FAD4BD1-F920-4287-9EE4-4520799F8021}</ProjectGuid>
+    <ProjectGuid>{6D4E16F9-362F-466A-A28D-3E5D24CB18ED}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Heap</RootNamespace>
   </PropertyGroup>

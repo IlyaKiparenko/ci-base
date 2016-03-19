@@ -17,7 +17,7 @@ id = 1
 for root, dirnames, filenames in os.walk('.'):
   for filename in fnmatch.filter(filenames, '*.vcxproj'):
     path = os.path.join(root, filename)
-    new_path = os.path.join(root, filename)
+    new_path = os.path.join(root, filename.replace('.', '_' + str(id) + '.'))
     id += 1
     os.rename(path, new_path)
     vcxproj_file = open(new_path, 'r')
@@ -28,15 +28,15 @@ for root, dirnames, filenames in os.walk('.'):
       new_guid = str(uuid.uuid4()).upper()
       old_guid = str(guid.group(1))
       new_projectname = new_path[:-len('.vcxproj')].replace('\\','_')[2:]
-
-      vcxproj_guids.append(new_guid)
+      
+      vcxproj_guids.append(new_guid)	
       vcxproj_paths.append(new_path)
       vcxproj_names.append(new_projectname)
-
+      
       vcxproj_file = open(new_path, 'w')
       vcxproj_file.write(re.sub(projectname_pattern, '<ProjectName>'+new_projectname+'</ProjectName>', vcxproj).replace(old_guid, new_guid))
       vcxproj_file.close()
-      print ('Project: %s' % new_path)
+      print 'Project: %s' % new_path
 
 projects_string = ''
 for i in range(0, len(vcxproj_paths)):

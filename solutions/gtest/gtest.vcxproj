@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7C8BE653-86DE-4AD0-B16B-A5A5405C4EE1}</ProjectGuid>
+    <ProjectGuid>{8728D863-B4B6-4E3F-8EA3-D9AF8923BCE4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>gtest</RootNamespace>
   </PropertyGroup>
