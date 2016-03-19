@@ -14,7 +14,7 @@ TEST(Heap, can_pop_min_element) {
   Heap t(2, 2);
   t.push(2);
   t.push(1);
-  EXPECT_EQ(1,t.min_pop());
+  EXPECT_EQ(1, t.min_pop());
 }
 
 TEST(Heap, can_up_element) {
