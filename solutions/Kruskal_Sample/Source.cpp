@@ -101,7 +101,7 @@ Graph* Kruskal(Graph* g) {
 
 int main() {
   srand(time(0));
-  Graph* g = crG(4, 2);
+  Graph* g = crG(5, 10);
   printG(g);
   printf("\n");
   Graph* res = Kruskal(g);
