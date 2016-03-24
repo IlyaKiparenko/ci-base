@@ -5,7 +5,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KSet", "KSet\KSet.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PHeap", "PHeap\PHeap.vcxproj", "{C076F622-88F1-488A-A66F-92F55E48DCAB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X_Kruskal_Sample", "Kruskal_Sample\Kruskal_Sample.vcxproj", "{119232CC-F5CF-4CD3-B67A-9886F259E110}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kruskal_Sample", "Kruskal_Sample\Kruskal_Sample.vcxproj", "{119232CC-F5CF-4CD3-B67A-9886F259E110}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C076F622-88F1-488A-A66F-92F55E48DCAB} = {C076F622-88F1-488A-A66F-92F55E48DCAB}
+		{E281DE3D-9916-4D88-92C9-324B61E2398E} = {E281DE3D-9916-4D88-92C9-324B61E2398E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

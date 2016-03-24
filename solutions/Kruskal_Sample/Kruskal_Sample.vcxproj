@@ -14,7 +14,7 @@
     <ProjectGuid>{119232CC-F5CF-4CD3-B67A-9886F259E110}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Kruskal_Sample</RootNamespace>
-    <ProjectName>X_Kruskal_Sample</ProjectName>
+    <ProjectName>Kruskal_Sample</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
