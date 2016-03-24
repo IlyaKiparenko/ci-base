@@ -26,7 +26,7 @@ void KSet::merge(int i, int j) {
 }
 
 void KSet::print() {
-  printf("Size = %i\n[",size);
+  printf("Size = %i\n[", size);
   for (int k = 0; k < size; k++)
     printf("%i,", m[k]);
   printf("END]\n");

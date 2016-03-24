@@ -34,7 +34,7 @@ int GFind(int i, int j, Graph* t, int len) {
     u++;
     r = (q.a != i || q.b != j) && (q.a != j || q.b != i);
   } while (r && u < len);
-  return !r; 
+  return !r;
 }
 
 
@@ -66,7 +66,6 @@ void printG(Graph* t) {
       printf("\n");
     q = t -> arr[i];
     printf("<%2i ~ %2i , %2i> ", q.a, q.b, q.size);
-    
   }
   printf("\n");
 }
@@ -85,7 +84,7 @@ Graph* Kruskal(Graph* g) {
     t = g -> arr[heap.min_pop()];
     if (set.whereI(t.a) != set.whereI(t.b)) {
       set.merge(t.a, t.b);
-      listE.push_back(t);//crE(t.a, t.b, t.size));
+      listE.push_back(t);
     }
   }
   set.print();
