@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KSet", "KSet\KSet.vcxproj", "{E281DE3D-9916-4D88-92C9-324B61E2398E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PHeap", "PHeap\PHeap.vcxproj", "{C076F622-88F1-488A-A66F-92F55E48DCAB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X_Kruskal_Sample", "X_Kruskal_Sample\X_Kruskal_Sample.vcxproj", "{A763322E-0403-4F12-B870-EBBE48837116}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E281DE3D-9916-4D88-92C9-324B61E2398E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E281DE3D-9916-4D88-92C9-324B61E2398E}.Debug|Win32.Build.0 = Debug|Win32
+		{E281DE3D-9916-4D88-92C9-324B61E2398E}.Release|Win32.ActiveCfg = Release|Win32
+		{E281DE3D-9916-4D88-92C9-324B61E2398E}.Release|Win32.Build.0 = Release|Win32
+		{C076F622-88F1-488A-A66F-92F55E48DCAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C076F622-88F1-488A-A66F-92F55E48DCAB}.Debug|Win32.Build.0 = Debug|Win32
+		{C076F622-88F1-488A-A66F-92F55E48DCAB}.Release|Win32.ActiveCfg = Release|Win32
+		{C076F622-88F1-488A-A66F-92F55E48DCAB}.Release|Win32.Build.0 = Release|Win32
+		{A763322E-0403-4F12-B870-EBBE48837116}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A763322E-0403-4F12-B870-EBBE48837116}.Debug|Win32.Build.0 = Debug|Win32
+		{A763322E-0403-4F12-B870-EBBE48837116}.Release|Win32.ActiveCfg = Release|Win32
+		{A763322E-0403-4F12-B870-EBBE48837116}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
