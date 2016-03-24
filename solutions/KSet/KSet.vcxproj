@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8728D863-B4B6-4E3F-8EA3-D9AF8923BCE4}</ProjectGuid>
+    <ProjectGuid>{E281DE3D-9916-4D88-92C9-324B61E2398E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>gtest</RootNamespace>
+    <RootNamespace>KSet</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -40,10 +40,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetName>gtest</TargetName>
+    <TargetName>KSet</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <TargetName>gtest</TargetName>
+    <TargetName>KSet</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -79,10 +79,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="gtest.h" />
+    <ClInclude Include="KSet.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="gtest-all.cc" />
+    <ClCompile Include="KSet.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

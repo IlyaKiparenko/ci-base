@@ -1,21 +1,25 @@
-#include "Heap.h"
+#include "PHeap.h"
 #include <stdio.h>
 #include <exception>
 
-Heap::Heap() {}
+PHeap::PHeap() {}
 
-Heap::Heap(int size_, int d_) {
+PHeap::PHeap(int size_, int d_) {
   m = new int[size_];
+  index = new int[size_];
   max_size = size_;
   size = 0;
   d = d_;
 }
-void Heap::transp(int i, int j) {
+void PHeap::transp(int i, int j) {
   int t = m[i];
   m[i] = m[j];
   m[j] = t;
+  t = index[i];
+  index[i] = index[j];
+  index[j] = t;
 }
-void Heap::vdown(int i) {
+void PHeap::vdown(int i) {
   if (i*d+1 < size) {
     int min;
     int imin;
@@ -39,23 +43,24 @@ void Heap::vdown(int i) {
   }
 }
 
-void Heap::vup(int i) {
+void PHeap::vup(int i) {
   while (i > 0 && m[i] < m[(i - 1)/d]) {
     transp(i, (i - 1)/d);
     i = (i - 1)/d;
   }
 }
 
-int Heap::min_pop() {
+int PHeap::min_pop() {
   transp(0, size - 1);
   size--;
   vdown(0);
-  return(m[size]);
+  return(index[size]);
 }
 
-void Heap::push(int i) {
+void PHeap::push(int rank, int index_) {
   if (size < max_size) {
-    m[size] = i;
+    m[size] = rank;
+    index[size] = index_;
     size++;
     vup(size - 1);
   } else {
@@ -63,28 +68,13 @@ void Heap::push(int i) {
   }
 }
 
-Heap::~Heap() {
+PHeap::~PHeap() {
   delete[] m;
 }
 
-void Heap::print() {
+void PHeap::print() {
   for (int i = 0; i < size; i++) {
     printf("%4i ", m[i]);
   }
   printf("\n");
-}
-
-void Heap::HeapSort(int* ar, int size, int d) {
-  Heap h;
-  h.size = size;
-  h.max_size = size;
-  h.d = d;
-  h.m = ar;
-  for (int i = 0; i < size; i++) {
-    h.vup(i);
-  }
-  for (int i = 0; i < size; i++) {
-    h.min_pop();
-  }
-  h.m = new int[1];
 }
