@@ -10,12 +10,21 @@ typedef std::mersenne_twister_engine<int,
   32,624,397,31,0x9908b0df,11,0xffffffff,7,0x9d2c5680,15,0xefc60000,18,1812433253>
   mt19937;
 
-int main() {
+int main(int argc, char *argv[]) {
   time_t start_time = time(0);
-  mt19937 mt; 
-  int EXP_SIZE = 4000;
-  int n = 300;
-  int m = 300;
+  mt19937 mt;
+  int EXP_SIZE;
+  int n;
+  int m;
+  if (argc > 1) {
+    EXP_SIZE = 4000;
+    n = 300;
+    m = 300;
+  } else {
+    EXP_SIZE = 10;
+    n = 20;
+    m = 20;
+  }
   int size = n*m + 2*n;
   SepSet set(size);
   int count;
