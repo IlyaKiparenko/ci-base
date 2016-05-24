@@ -20,7 +20,7 @@ TEST(SepSet, can_merge) {
   t.add(0);
   t.add(1);
   EXPECT_NE(t.whereI(1), t.whereI(0));
-  t.merge(0,1);
+  t.merge(0, 1);
   EXPECT_EQ(t.whereI(1), t.whereI(0));
 }
 
