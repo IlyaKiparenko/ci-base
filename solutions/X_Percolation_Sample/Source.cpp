@@ -23,9 +23,9 @@ int main(int argc, char *argv[]) {
     n = 300;
     m = 300;
   } else {
-    EXP_SIZE = 10;
-    n = 20;
-    m = 20;
+    EXP_SIZE = 1;
+    n = 5;
+    m = 5;
   }
   int size = n*m + 2*n;
   SepSet set(size);
