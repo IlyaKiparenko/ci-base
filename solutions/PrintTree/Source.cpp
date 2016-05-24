@@ -5,7 +5,9 @@
 #include <stack>
 #include <queue>
 
-using namespace std;
+using std::stack;
+using std::queue;
+using std::cout;
 
 struct Node {
   int key;
@@ -29,15 +31,16 @@ Node* crTree(int n) {
     root -> left = crTree(y);
     root -> right = crTree(n - 1 - y);
     return root;
-  } else 
+  } else {
     if (n == 1)
       return crN(rand()%20, 0, 0);
     else
       return 0;
+  }
 }
 
 void print1(Node* root) {
-  //me -> left -> right
+  // me -> left -> right
   stack<Node*> s;
   s.push(root);
   Node* t;
@@ -54,7 +57,7 @@ void print1(Node* root) {
 }
 
 void print2(Node* root) {
-  //left -> me -> right
+  // left -> me -> right
   stack<Node*> s;
   stack<char> flag;
   s.push(root);
@@ -102,7 +105,7 @@ void print3(Node* root) {
         s.push(t -> right);
         flag.push(0);
       }
-    } else
+    } else {
       if (f == 1) {
         flag.pop();
         flag.push(2);
@@ -115,6 +118,7 @@ void print3(Node* root) {
         flag.pop();
         s.pop();
       }
+    }
   }
   cout << "\n";
 }
