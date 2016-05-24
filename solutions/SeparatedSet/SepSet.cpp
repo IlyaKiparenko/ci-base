@@ -23,7 +23,7 @@ void SepSet::add(int i) {
     } else {
       throw new std::exception("double union");
     }
-  else
+  } else {
     throw new std::exception("wrong index");
   }
 }
@@ -37,15 +37,16 @@ void SepSet::merge(int i, int j) {
         while (sets[j] != j)
           j = sets[j];
         if (i != j) {
-          if (h[i] < h[j])
+          if (h[i] < h[j]) {
             sets[i] = j;
-          else
+          } else {
             if (h[i] > h[j]) {
               sets[j] = i;
             } else {
               sets[i] = j;
               h[j] +=1;
             }
+          }
         }
       }
     } else {
