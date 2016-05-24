@@ -7,7 +7,9 @@
 #include <random>
 
 typedef std::mersenne_twister_engine<int,
-  32,624,397,31,0x9908b0df,11,0xffffffff,7,0x9d2c5680,15,0xefc60000,18,1812433253>
+  32, 624, 397, 31, 0x9908b0df, 11,
+  0xffffffff, 7, 0x9d2c5680, 15,
+  0xefc60000, 18, 1812433253>
   mt19937;
 
 int main(int argc, char *argv[]) {
@@ -45,7 +47,7 @@ int main(int argc, char *argv[]) {
     for (int i = 1; i < n; i++) {
       set.merge(0, i);
       set.merge(size - 1, size - i - 1);
-    } 
+    }
     while (!f && count < n*m) {
       do {
         x = mt() % n;
@@ -68,7 +70,7 @@ int main(int argc, char *argv[]) {
     }
     result += count*1.0/(n*m);
   }
-  printf("percentage = %f\n",result/EXP_SIZE);
+  printf("percentage = %f\n", result/EXP_SIZE);
   printf("time = %i sec\n", time(0) - start_time);
   std::cin >> count;
 }
