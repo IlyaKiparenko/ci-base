@@ -72,5 +72,4 @@ int main(int argc, char *argv[]) {
   }
   printf("percentage = %f\n", result/EXP_SIZE);
   printf("time = %i sec\n", time(0) - start_time);
-  std::cin >> count;
 }
