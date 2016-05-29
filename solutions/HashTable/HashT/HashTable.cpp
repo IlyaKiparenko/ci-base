@@ -77,11 +77,12 @@ void HashTable<Key, Data>::del(Key key_) {
 template<class Key, class Data>
 void HashTable<Key, Data>::print(const ostream& os) {
   for (int i = 0; i < size; i++) {
-    if (m[i] == 0)
+    if (m[i] == 0) {
       os << "state=FREE     key=0      data=0\n";
-    else
+    } else {
       os << "state=BUSY\tkey=" << m[i]->h_key;
       os << "\tdata=" << m[i]->h_data << "\n";
+	}
   }
 }
 

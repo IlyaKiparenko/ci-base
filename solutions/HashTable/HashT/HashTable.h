@@ -6,8 +6,10 @@
 #include <iostream>
 #include <sstream>
 
-use std::ostream;
-use std::string;
+using std::ostream;
+using std::cout;
+using std::endl;
+using std::string;
 
 template<class Key, class Data>
 class HashTable {

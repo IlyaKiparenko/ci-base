@@ -46,7 +46,7 @@ void HashTest(string in_file, string out_file) {
   }
 }
 
-string sample =
+char sample[] =
   "key=int, data=int (size = 13, step = 3)\n"
   "Add        2213        22734\n"
   "Add        23992       5052\n"
@@ -67,7 +67,7 @@ int main(int argc, char* argv[]) {
   } else {
     HashTable<int, int> tab(13, 3, HashFuncInt);
     ofstream test("test1.txt");
-    test << sample.c_str();
+    test << sample;
     test.close();
     cout << "In operations \n\n";
     tab.doOperationFile("test1.txt", "test2.txt");
