@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HashT", "HashT\HashT.vcxproj", "{A86792D6-D09E-485E-9B48-10E6DF15D03F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample", "Sample\Sample.vcxproj", "{8BF29F67-42ED-4A59-B710-06724684FD91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A86792D6-D09E-485E-9B48-10E6DF15D03F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A86792D6-D09E-485E-9B48-10E6DF15D03F}.Debug|Win32.Build.0 = Debug|Win32
+		{A86792D6-D09E-485E-9B48-10E6DF15D03F}.Release|Win32.ActiveCfg = Release|Win32
+		{A86792D6-D09E-485E-9B48-10E6DF15D03F}.Release|Win32.Build.0 = Release|Win32
+		{8BF29F67-42ED-4A59-B710-06724684FD91}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8BF29F67-42ED-4A59-B710-06724684FD91}.Debug|Win32.Build.0 = Debug|Win32
+		{8BF29F67-42ED-4A59-B710-06724684FD91}.Release|Win32.ActiveCfg = Release|Win32
+		{8BF29F67-42ED-4A59-B710-06724684FD91}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

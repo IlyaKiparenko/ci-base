@@ -1,0 +1,30 @@
+key=char*, data=int (size = 30, step = 1357)
+Add        dolor          2213
+Add        sit            22734
+Add        amet           23992
+Add        consectetuer   5052
+Add        adipiscing     29849
+Add        elit           5559
+Add        Aenean         16873
+Add        commodo        16032
+Add        ligula         29889
+Add        eget           31999
+Add        massa          5652
+Add        Cam            24668
+Add        sociis         34
+Add        natoque        10086
+Add        penatibus      22149
+Add        et             28753
+Add        magnis         11168
+Add        dis            9484
+Add        parturient     9840
+Add        montes         19006
+Add        ridiculus      21526
+Add        mus            20276
+Del        elit
+Del        natoque
+Del        eget
+Del        magnis
+Add        eget           11804
+Add        elit           11942
+Add        magnis         26439
