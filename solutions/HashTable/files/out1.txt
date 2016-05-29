@@ -1,0 +1,13 @@
+state=FREE     key=0      data=0
+state=BUSY     key=29849      data=5559
+state=BUSY     key=6668      data=16032
+state=BUSY     key=2213      data=22734
+state=BUSY     key=11168      data=9484
+state=FREE     key=0      data=0
+state=BUSY     key=27290      data=11804
+state=BUSY     key=23992      data=5052
+state=FREE     key=0      data=0
+state=FREE     key=0      data=0
+state=BUSY     key=5652      data=24668
+state=BUSY     key=21526      data=20276
+state=BUSY     key=16873      data=16032
