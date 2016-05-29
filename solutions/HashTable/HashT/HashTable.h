@@ -10,11 +10,13 @@ using std::ostream;
 using std::cout;
 using std::endl;
 using std::string;
+using std::ifstream;
+using std::ofstream;
 
 template<class Key, class Data>
 class HashTable {
  public:
-  typedef int (*HashFunc) (Key&, int);
+  typedef int (*HashFunc) (const Key&, int);
   HashFunc hash;
   HRecord<Key, Data>** m;
   int size;
@@ -25,7 +27,7 @@ class HashTable {
   int find1(Key key_);
   int find2(Key key_);
   void del(Key key_);
-  void print(const ostream& os);
+  void print(ostream* os);
   void doOperationFile(string in_file, string out_file);
   ~HashTable();
 };

@@ -75,14 +75,14 @@ void HashTable<Key, Data>::del(Key key_) {
 }
 
 template<class Key, class Data>
-void HashTable<Key, Data>::print(const ostream& os) {
+void HashTable<Key, Data>::print(ostream* os) {
   for (int i = 0; i < size; i++) {
     if (m[i] == 0) {
-      os << "state=FREE     key=0      data=0\n";
+      (*os) << "state=FREE     key=0      data=0\n";
     } else {
-      os << "state=BUSY\tkey=" << m[i]->h_key;
-      os << "\tdata=" << m[i]->h_data << "\n";
-	}
+      (*os) << "state=BUSY\tkey=" << m[i]->h_key;
+      (*os) << "\tdata=" << m[i]->h_data << "\n";
+    }
   }
 }
 
@@ -107,7 +107,7 @@ inline void HashTable<Key, Data>::doOperationFile
   }
   f.close();
   ofstream out(out_file.c_str());
-  print(out);
+  print(&out);
   out.close();
 }
 
