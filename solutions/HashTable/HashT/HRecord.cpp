@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 template<class Key, class Data>
-HRecord<Key, Data>::HRecord(Key key_, Data& data_) {
+HRecord<Key, Data>::HRecord(Key key_, const Data& data_) {
   h_key = key_;
   h_data = data_;
 }
@@ -18,5 +18,5 @@ HRecord<Key, Data>::HRecord(const HRecord<Key, Data>& t) {
 }
 
 template<class Key, class Data>
-HRecord<Key, Data>::~HRecord() { 
+HRecord<Key, Data>::~HRecord() {
 }

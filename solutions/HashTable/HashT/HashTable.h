@@ -6,11 +6,12 @@
 #include <iostream>
 #include <sstream>
 
-using namespace std;
+use std::ostream;
+use std::string;
 
 template<class Key, class Data>
 class HashTable {
-public:
+ public:
   typedef int (*HashFunc) (Key&, int);
   HashFunc hash;
   HRecord<Key, Data>** m;
@@ -18,11 +19,11 @@ public:
   int step;
   HashTable(int size_, int step_, HashFunc hash_);
   void add(Key key_, Data data_);
-  void add(HRecord<Key, Data>& t);
+  void add(const HRecord<Key, Data>& t);
   int find1(Key key_);
   int find2(Key key_);
   void del(Key key_);
-  void print(ostream& os);
+  void print(const ostream& os);
   void doOperationFile(string in_file, string out_file);
   ~HashTable();
 };

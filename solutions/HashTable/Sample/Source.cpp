@@ -3,11 +3,11 @@
 #include <fstream>
 #include <string>
 
-int HashFuncInt(int& key_, int size_) {
+int HashFuncInt(const int& key_, int size_) {
   return key_ % size_;
 }
 
-int HashFuncStr(string& key_, int size_) {
+int HashFuncStr(const string& key_, int size_) {
   const char* t = key_.c_str();
   int l = 0;
   int summ = 0;
@@ -36,30 +36,30 @@ void HashTest(string in_file, string out_file) {
     in.close();
     if (type_o[0] == 'c') {
       HashTable<string, int> tab(size, step, HashFuncStr);
-      tab.doOperationFile(in_file, out_file); 
+      tab.doOperationFile(in_file, out_file);
     } else {
       HashTable<int, int> tab(size, step, HashFuncInt);
-      tab.doOperationFile(in_file, out_file); 
+      tab.doOperationFile(in_file, out_file);
     }
   } else {
     cout << "Error File \n";
   }
 }
 
-string sample = 
-   "key=int, data=int (size = 13, step = 3)\n\
-    Add        2213        22734\n\
-    Add        23992       5052\n\
-    Add        29849       5559\n\
-    Add        16873       16032\n\
-    Add        29889       31999\n\
-    Add        5652        24668\n\
-    Add        34          10086\n\
-    Add        22149       28753\n\
-    Add        11168       9484\n\
-    Add        9840        19006\n\
-    Del        29889\n\
-    Del        9840";
+string sample =
+  "key=int, data=int (size = 13, step = 3)\n"
+  "Add        2213        22734\n"
+  "Add        23992       5052\n"
+  "Add        29849       5559\n"
+  "Add        16873       16032\n"
+  "Add        29889       31999\n"
+  "Add        5652        24668\n"
+  "Add        34          10086\n"
+  "Add        22149       28753\n"
+  "Add        11168       9484\n"
+  "Add        9840        19006\n"
+  "Del        29889\n"
+  "Del        9840";
 
 int main(int argc, char* argv[]) {
   if (argc > 1) {
