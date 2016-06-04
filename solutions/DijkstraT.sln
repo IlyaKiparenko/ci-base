@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PHeap", "PHeap\PHeap.vcxproj", "{C076F622-88F1-488A-A66F-92F55E48DCAB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X_Dijkstra_Sample", "X_Dijkstra_Sample\X_Dijkstra_Sample.vcxproj", "{EDCDE946-D63E-4BEA-80EB-0072946F4252}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AVL_Tree", "AVL_Tree\AVL_Tree.vcxproj", "{0B5DF949-BF01-4A47-B218-7C69A9D58806}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C076F622-88F1-488A-A66F-92F55E48DCAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C076F622-88F1-488A-A66F-92F55E48DCAB}.Debug|Win32.Build.0 = Debug|Win32
+		{C076F622-88F1-488A-A66F-92F55E48DCAB}.Release|Win32.ActiveCfg = Release|Win32
+		{C076F622-88F1-488A-A66F-92F55E48DCAB}.Release|Win32.Build.0 = Release|Win32
+		{EDCDE946-D63E-4BEA-80EB-0072946F4252}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EDCDE946-D63E-4BEA-80EB-0072946F4252}.Debug|Win32.Build.0 = Debug|Win32
+		{EDCDE946-D63E-4BEA-80EB-0072946F4252}.Release|Win32.ActiveCfg = Release|Win32
+		{EDCDE946-D63E-4BEA-80EB-0072946F4252}.Release|Win32.Build.0 = Release|Win32
+		{0B5DF949-BF01-4A47-B218-7C69A9D58806}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B5DF949-BF01-4A47-B218-7C69A9D58806}.Debug|Win32.Build.0 = Debug|Win32
+		{0B5DF949-BF01-4A47-B218-7C69A9D58806}.Release|Win32.ActiveCfg = Release|Win32
+		{0B5DF949-BF01-4A47-B218-7C69A9D58806}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
